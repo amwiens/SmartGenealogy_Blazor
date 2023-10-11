@@ -27,21 +27,21 @@ public class Color : ValueObject
 
         return color;
     }
-    public static Color White => new Color("#FFFFFF");
+    public static Color White => new("#FFFFFF");
 
-    public static Color Red => new Color("#FF5733");
+    public static Color Red => new("#FF5733");
 
-    public static Color Orange => new Color("#FFC300");
+    public static Color Orange => new("#FFC300");
 
-    public static Color Yellow => new Color("#FFFF66");
+    public static Color Yellow => new("#FFFF66");
 
-    public static Color Green => new Color("#CCFF99 ");
+    public static Color Green => new("#CCFF99 ");
 
-    public static Color Blue => new Color("#6666FF");
+    public static Color Blue => new("#6666FF");
 
-    public static Color Purple => new Color("#9966CC");
+    public static Color Purple => new("#9966CC");
 
-    public static Color Grey => new Color("#999999");
+    public static Color Grey => new("#999999");
 
     public string Code { get; private set; }
 

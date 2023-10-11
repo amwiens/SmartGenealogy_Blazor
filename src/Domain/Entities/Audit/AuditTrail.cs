@@ -25,9 +25,9 @@ public class AuditTrail : IEntity<int>
 
     public List<string>? AffectedColumns { get; set; }
 
-    public Dictionary<string, object> PrimaryKey { get; set; } = new();
+    public Dictionary<string, object> PrimaryKey { get; set; } = [];
 
-    public List<PropertyEntry> TemporaryProperties { get; } = new();
+    public List<PropertyEntry> TemporaryProperties { get; } = [];
 
-    public bool HasTemporaryProperties => TemporaryProperties.Any();
+    public bool HasTemporaryProperties => TemporaryProperties.Count != 0;
 }

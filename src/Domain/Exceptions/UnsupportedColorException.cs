@@ -1,9 +1,5 @@
 ﻿namespace SmartGenealogy.Domain.Exceptions;
 
-public class UnsupportedColorException : Exception
+public class UnsupportedColorException(string code) : Exception($"Color \"{code}\" is unsupported.")
 {
-    public UnsupportedColorException(string code)
-        : base($"Color \"{code}\" is unsupported.")
-    {
-    }
 }

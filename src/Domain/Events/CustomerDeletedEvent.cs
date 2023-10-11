@@ -1,11 +1,6 @@
 ﻿namespace SmartGenealogy.Domain.Events;
 
-public class CustomerDeletedEvent : DomainEvent
+public class CustomerDeletedEvent(Customer item) : DomainEvent
 {
-    public CustomerDeletedEvent(Customer item)
-    {
-        Item = item;
-    }
-
-    public Customer Item { get; }
+    public Customer Item { get; } = item;
 }
