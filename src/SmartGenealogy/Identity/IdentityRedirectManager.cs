@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
 namespace SmartGenealogy.Identity;
+
 internal sealed class IdentityRedirectManager(
     NavigationManager navigationManager,
     IHttpContextAccessor httpContextAccessor)

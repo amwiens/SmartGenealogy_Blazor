@@ -2,6 +2,7 @@
 
 // Lear more: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-add-cqrs-patterns/implement-value-objects
 #nullable disable
+
 public abstract class ValueObject
 {
     protected static bool EqualOperator(ValueObject left, ValueObject right)

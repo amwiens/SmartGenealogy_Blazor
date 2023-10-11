@@ -1,6 +1,7 @@
 ﻿namespace SmartGenealogy.Domain.ValueObjects;
 
 #nullable disable
+
 public class Color : ValueObject
 {
     static Color()
@@ -27,6 +28,7 @@ public class Color : ValueObject
 
         return color;
     }
+
     public static Color White => new("#FFFFFF");
 
     public static Color Red => new("#FF5733");

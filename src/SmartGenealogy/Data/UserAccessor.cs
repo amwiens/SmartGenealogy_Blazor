@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using SmartGenealogy.Identity;
 
 namespace SmartGenealogy.Data;
+
 internal sealed class UserAccessor(
     IHttpContextAccessor httpContextAccessor,
     UserManager<ApplicationUser> userManager,

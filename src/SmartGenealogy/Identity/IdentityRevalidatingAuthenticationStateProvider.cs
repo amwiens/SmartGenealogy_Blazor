@@ -8,6 +8,7 @@ using Microsoft.Extensions.Options;
 using SmartGenealogy.Data;
 
 namespace SmartGenealogy.Identity;
+
 public class IdentityRevalidatingAuthenticationStateProvider : RevalidatingServerAuthenticationStateProvider
 {
     private readonly IServiceScopeFactory _scopeFactory;

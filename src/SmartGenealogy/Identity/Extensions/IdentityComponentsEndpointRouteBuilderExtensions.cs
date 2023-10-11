@@ -12,6 +12,7 @@ using SmartGenealogy.Components.Pages.Account.Manage;
 using SmartGenealogy.Data;
 
 namespace Microsoft.AspNetCore.Routing;
+
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {
     // These endpoints are required by the Identity Razor components defined in the /Components/Pages/Account directory of this project.
