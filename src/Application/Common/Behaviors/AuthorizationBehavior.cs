@@ -1,4 +1,6 @@
-﻿namespace SmartGenealogy.Application.Common.Behaviors;
+﻿using SmartGenealogy.Application.Common.Interfaces.Identity;
+
+namespace SmartGenealogy.Application.Common.Behaviors;
 
 public class AuthorizationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : IRequest<TResponse>
