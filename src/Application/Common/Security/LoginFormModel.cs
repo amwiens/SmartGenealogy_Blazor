@@ -1,6 +1,4 @@
-﻿using FluentValidation.Results;
-
-namespace SmartGenealogy.Application.Common.Security;
+﻿namespace SmartGenealogy.Application.Common.Security;
 
 public class LoginFormModel
 {
@@ -26,12 +24,4 @@ public class LoginFormModelFluentValidator : AbstractValidator<LoginFormModel>
             .MinimumLength(6).WithMessage(_localizer["Your password length must be at least 6 characters."])
             .MaximumLength(16).WithMessage(_localizer["Your password length must not exceed 16 characters."]);
     }
-
-    public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
-    {
-        ValidationResult? result =
-            await ValidateAsync(ValidationContext<LoginFormModel>.CreateWithOptions((LoginFormModel)model,
-                x => x.IncludeProperties(propertyName)));
-        return result.IsValid ? Array.Empty<string>() : result.Errors.Select(equals => equals.ErrorMessage);
-    };
 }

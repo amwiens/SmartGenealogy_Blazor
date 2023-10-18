@@ -10,12 +10,4 @@ public class AddEditCustomerCommandValidator : AbstractValidator<AddEditCustomer
         //     .NotEmpty();
         throw new NotImplementedException();
     }
-
-    public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
-    {
-        var result = await ValidateAsync(ValidationContext<AddEditCustomerCommand>.CreateWithOptions((AddEditCustomerCommand)model, x => x.IncludeProperties(propertyName)));
-        if (result.IsValid)
-            return Array.Empty<string>();
-        return result.Errors.Select(e => e.ErrorMessage);
-    };
 }

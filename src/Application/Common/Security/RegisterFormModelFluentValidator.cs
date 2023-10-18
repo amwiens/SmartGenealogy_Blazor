@@ -21,7 +21,7 @@ public class RegisterFormModelFluentValidator : AbstractValidator<RegisterFormMo
             .MaximumLength(255)
             .EmailAddress();
         RuleFor(p => p.Password).NotEmpty().WithMessage(_localizer["CannotBeEmpty"])
-            .MinimumLength(identitySettings.RequiredLength).WithMessage(string.Format(_localizer["MinLength"], identitySettings.RequiredLength))
+            .MinimumLength(identitySettings!.RequiredLength).WithMessage(string.Format(_localizer["MinLength"], identitySettings.RequiredLength))
             .MaximumLength(identitySettings.MaxLength).WithMessage(string.Format(_localizer["MaxLength"], identitySettings.MaxLength))
             .Matches(identitySettings.RequireUpperCase ? @"[A-Z]+" : string.Empty).WithMessage(_localizer["MustContainUpperCase"])
             .Matches(identitySettings.RequireLowerCase ? @"[a-z]+" : string.Empty).WithMessage(_localizer["MustContainLowerCase"])

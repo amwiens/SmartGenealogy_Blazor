@@ -1,5 +1,4 @@
 ﻿using SmartGenealogy.Application.Features.Customers.Caching;
-using SmartGenealogy.Application.Features.Customers.Commands.AddEdit;
 using SmartGenealogy.Application.Features.Customers.DTOs;
 
 namespace SmartGenealogy.Application.Features.Customers.Commands.Create;
@@ -23,8 +22,8 @@ public class CreateCustomerCommand : ICacheInvalidatorRequest<Result<int>>
     {
         public Mapping()
         {
-            CreateMap<CustomerDto, AddEditCustomerCommand>(MemberList.None);
-            CreateMap<AddEditCustomerCommand, Customer>(MemberList.None);
+            CreateMap<CustomerDto, CreateCustomerCommand>(MemberList.None);
+            CreateMap<CreateCustomerCommand, Customer>(MemberList.None);
         }
     }
 }
