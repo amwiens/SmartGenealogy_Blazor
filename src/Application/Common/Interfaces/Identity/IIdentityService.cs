@@ -1,4 +1,6 @@
-﻿namespace SmartGenealogy.Application.Common.Interfaces.Identity;
+﻿using SmartGenealogy.Application.Features.Identity.Dto;
+
+namespace SmartGenealogy.Application.Common.Interfaces.Identity;
 
 public interface IIdentityService : IService
 {

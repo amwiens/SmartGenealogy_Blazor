@@ -1,4 +1,5 @@
 ﻿using SmartGenealogy.Application.Common.Interfaces.Serialization;
+using SmartGenealogy.Application.Features.Identity.Dto;
 
 namespace SmartGenealogy.Application.Features.AuditTrails.DTOs;
 

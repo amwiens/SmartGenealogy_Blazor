@@ -1,4 +1,6 @@
-﻿namespace SmartGenealogy.Application.Common.Interfaces;
+﻿using SmartGenealogy.Application.Features.KeyValues.DTOs;
+
+namespace SmartGenealogy.Application.Common.Interfaces;
 
 public interface IPicklistService
 {
