@@ -2,7 +2,7 @@
 using SmartGenealogy.Application.Features.Customers.DTOs;
 using SmartGenealogy.Application.Features.Customers.Specifications;
 
-namespace SmartGenealogy.Application.Features.Customers.Queries.Pagination;
+namespace SmartGenealogy.Application.Features.Customers.Queries.PaginationQuery;
 
 public class CustomersWithPaginationQuery : CustomerAdvancedFilter, ICacheableRequest<PaginatedData<CustomerDto>>
 {

@@ -1,4 +1,6 @@
-﻿namespace SmartGenealogy.Application.Common.Interfaces.MultiTenant;
+﻿using SmartGenealogy.Application.Features.Tenants.DTOs;
+
+namespace SmartGenealogy.Application.Common.Interfaces.MultiTenant;
 
 public interface ITenantService
 {

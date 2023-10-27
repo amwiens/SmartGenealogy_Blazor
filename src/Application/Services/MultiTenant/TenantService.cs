@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 using SmartGenealogy.Application.Common.Interfaces.MultiTenant;
+using SmartGenealogy.Application.Features.Tenants.Caching;
+using SmartGenealogy.Application.Features.Tenants.DTOs;
 
 namespace SmartGenealogy.Application.Services.MultiTenant;
 

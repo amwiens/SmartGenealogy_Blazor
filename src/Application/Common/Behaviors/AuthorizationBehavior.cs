@@ -1,4 +1,5 @@
 ﻿using SmartGenealogy.Application.Common.Interfaces.Identity;
+using SmartGenealogy.Application.Common.Security;
 
 namespace SmartGenealogy.Application.Common.Behaviors;
 
