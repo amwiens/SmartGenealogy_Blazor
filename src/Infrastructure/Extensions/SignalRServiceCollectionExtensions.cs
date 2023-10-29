@@ -6,7 +6,7 @@ public static class SignalRServiceCollectionExtensions
 {
     public static void AddSignalRServices(this IServiceCollection services)
     {
-        services.AddSingleton<IUsersStateContainer, UsersStateContainer>()
+        services.AddSingleton<IUsersStateContainer, UserStateContainer>()
             .AddScoped<HubClient>()
             .AddSignalR();
     }

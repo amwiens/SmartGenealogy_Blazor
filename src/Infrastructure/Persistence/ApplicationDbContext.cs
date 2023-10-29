@@ -7,7 +7,7 @@ namespace SmartGenealogy.Infrastructure.Persistence;
 public class ApplicationDbContext : IdentityDbContext<
     ApplicationUser, ApplicationRole, string,
     ApplicationUserClaim, ApplicationUserRole, ApplicationUserLogin,
-    ApplicationRoleClaim, ApplicationUserToken>
+    ApplicationRoleClaim, ApplicationUserToken>, IApplicationDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

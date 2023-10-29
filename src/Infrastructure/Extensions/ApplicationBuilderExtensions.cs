@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 
 using SmartGenealogy.Infrastructure.Constants.Localization;
+using SmartGenealogy.Infrastructure.Hubs;
 
 namespace SmartGenealogy.Infrastructure.Extensions;
 

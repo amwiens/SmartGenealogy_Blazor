@@ -1,4 +1,5 @@
 ﻿using SmartGenealogy.Application.Services.PaddleOCR;
+using SmartGenealogy.Infrastructure.Services.PaddleOCR;
 
 namespace SmartGenealogy.Infrastructure.Extensions;
 

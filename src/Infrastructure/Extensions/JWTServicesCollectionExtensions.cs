@@ -1,5 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 
+using SmartGenealogy.Infrastructure.Services.JWT;
+
 namespace SmartGenealogy.Infrastructure.Extensions;
 
 public static class JWTServicesCollectionExtensions

@@ -18,6 +18,7 @@ using SmartGenealogy.Application.Common.Interfaces;
 using SmartGenealogy.Application.Common.Interfaces.MultiTenant;
 using SmartGenealogy.Domain.Identity;
 using SmartGenealogy.Infrastructure;
+using SmartGenealogy.Infrastructure.Extensions;
 using SmartGenealogy.Infrastructure.Persistence;
 
 namespace Application.IntegrationTests;

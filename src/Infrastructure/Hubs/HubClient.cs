@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http.Connections;
 using Microsoft.AspNetCore.SignalR.Client;
 
+using SmartGenealogy.Infrastructure.Services.JWT;
+
 namespace SmartGenealogy.Infrastructure.Hubs;
 
 public class HubClient : IAsyncDisposable
